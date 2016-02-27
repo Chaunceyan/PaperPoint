@@ -4,13 +4,11 @@ import java.util.EventListener;
 
 import static com.sun.activation.registries.LogSupport.log;
 
-public class PenEventListener implements EventListener {
+public interface PenEventListener extends EventListener {
     /**
      * Trying to implement simple Listener
      * which can be accessed by other components easily.
      * Authored by Chauncey Yan.
      */
-    public void penEventReceive(PenEvent event) {
-        log("An event has been captured");
-    }
+    public void penEventReceive(PenEvent event);
 }
